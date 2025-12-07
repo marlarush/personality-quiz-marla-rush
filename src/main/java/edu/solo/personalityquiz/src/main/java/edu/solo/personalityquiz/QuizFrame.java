@@ -1,12 +1,34 @@
 package edu.solo.personalityquiz;
 
 /*
- * Team: Solo Project – Marla Rush
- * Contributor: Marla Rush
- * File: QuizFrame.java
- * Purpose: Swing GUI for displaying quiz questions and results (to be implemented in Phase 2).
+ * Project: Personality Quiz (Java Swing) — Introvert vs Extrovert
+ * Author: Marla Rush
+ * Date: 12-06-2025
+ * Description: Minimal Swing GUI shell. Will render the current question and options.
  */
 
 public class QuizFrame {
-    // GUI components and layout will be added in Phase 2
+
+    // Title shown on the window.
+    private String title;
+
+    // Constructs a QuizFrame with a default title.
+    public QuizFrame() {
+        this.title = "Personality Quiz";
+    }
+
+    // Constructs a QuizFrame with a custom title.
+    public QuizFrame(String title) {
+        this.title = title;
+    }
+
+    // Returns the window title.
+    public String getTitle() {
+        return title;
+    }
+
+    // Sets the window title.
+    public void setTitle(String title) {
+        this.title = title;
+    }
 }

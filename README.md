@@ -12,3 +12,11 @@ A Java Swing app where users answer multiple-choice questions. Each answer award
 - ✅ README updated
 
 ## Project Structure
+| Class       | Purpose                                                | Assigned To    |
+| ----------- | ------------------------------------------------------ | -------------- |
+| `App`       | Program entry point; launches GUI                      | **Marla Rush** |
+| `QuizFrame` | Minimal Swing GUI to display questions and navigate    | **Marla Rush** |
+| `Quiz`      | Holds question bank, selections, and scoring           | **Marla Rush** |
+| `Question`  | Model for a quiz question and its options              | **Marla Rush** |
+| `Option`    | Model for a single answer choice and its awarded trait | **Marla Rush** |
+| `Trait`     | Enum of personality traits used by the quiz            | **Marla Rush** |

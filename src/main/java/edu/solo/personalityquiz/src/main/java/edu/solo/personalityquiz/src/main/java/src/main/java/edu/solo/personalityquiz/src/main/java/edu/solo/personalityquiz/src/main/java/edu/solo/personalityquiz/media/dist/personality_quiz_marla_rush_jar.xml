@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="personality-quiz-marla-rush:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/personality_quiz_marla_rush_jar</output-path>
+    <root id="archive" name="personality-quiz-marla-rush.jar">
+      <element id="module-output" name="personality-quiz-marla-rush" />
+    </root>
+  </artifact>
+</component>

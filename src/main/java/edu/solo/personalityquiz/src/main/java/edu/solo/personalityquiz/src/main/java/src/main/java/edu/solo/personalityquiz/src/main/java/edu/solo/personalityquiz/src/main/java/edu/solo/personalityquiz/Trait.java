@@ -1,11 +1,11 @@
-package edu.solo.personalityquiz;
-
 /*
  * Project: Personality Quiz (Java Swing) — Introvert vs Extrovert
  * Author: Marla Rush
- * Date: 12-06-2025
+ * Date: 12-16-2026
  * Description: Enum of personality traits with a display label.
  */
+
+package edu.solo.personalityquiz;
 
 public enum Trait {
 
@@ -15,10 +15,9 @@ public enum Trait {
     // Extrovert trait.
     EXTROVERT("Extrovert");
 
-    // Human-readable label for display.
     private final String label;
 
-    // Constructs a trait with a label.
+    // Creates a Trait with a display label.
     Trait(String label) {
         this.label = label;
     }
@@ -28,3 +27,4 @@ public enum Trait {
         return label;
     }
 }
+

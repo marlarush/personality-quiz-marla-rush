@@ -1,7 +1,7 @@
 /*
  * Project: Personality Quiz (Java Swing) — Introvert vs Extrovert
  * Author: Marla Rush
- * Date: 2025-12-16
+ * Date: 12-16-2025
  * Description: Represents a quiz question and its list of answer options.
  */
 

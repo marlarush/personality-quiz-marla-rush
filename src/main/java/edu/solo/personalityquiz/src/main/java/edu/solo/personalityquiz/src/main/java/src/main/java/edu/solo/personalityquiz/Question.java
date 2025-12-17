@@ -1,41 +1,50 @@
+/*
+ * Project: Personality Quiz (Java Swing) — Introvert vs Extrovert
+ * Author: Marla Rush
+ * Date: 2025-12-16
+ * Description: Represents a quiz question and its list of answer options.
+ */
+
 package edu.solo.personalityquiz;
 
 import java.util.ArrayList;
 import java.util.List;
 
-/*
- * Project: Personality Quiz (Java Swing) — Introvert vs Extrovert
- * Author: Marla Rush
- * Date: 12-06-2025
- * Description: Represents a single question and its list of answer options.
- */
-
 public class Question {
 
-    // The question prompt shown to the user.
     private String prompt;
-
-    // The set of answer options for this question.
     private List<Option> options;
 
-    // Constructs a blank question with no options.
+    // Creates a blank question with an empty option list.
     public Question() {
         this.prompt = "";
         this.options = new ArrayList<>();
     }
 
-    // Constructs a question with a prompt and a starting list of options.
+    // Creates a question with a prompt and an empty option list.
+    public Question(String prompt) {
+        this.prompt = prompt;
+        this.options = new ArrayList<>();
+    }
+
+    // Creates a question with a prompt and initial options.
     public Question(String prompt, List<Option> options) {
         this.prompt = prompt;
         this.options = new ArrayList<>(options);
     }
 
-    // Returns the question prompt.
+    // Adds an option and returns this question for chaining.
+    public Question addOption(String text, Trait traitAward) {
+        this.options.add(new Option(text, traitAward));
+        return this;
+    }
+
+    // Returns the prompt text.
     public String getPrompt() {
         return prompt;
     }
 
-    // Sets the question prompt.
+    // Sets the prompt text.
     public void setPrompt(String prompt) {
         this.prompt = prompt;
     }
@@ -48,10 +57,5 @@ public class Question {
     // Replaces the list of options.
     public void setOptions(List<Option> options) {
         this.options = new ArrayList<>(options);
-    }
-
-    // Adds a single option to the end of the options list.
-    public void addOption(Option option) {
-        this.options.add(option);
     }
 }

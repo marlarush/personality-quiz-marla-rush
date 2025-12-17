@@ -1,17 +1,22 @@
-package edu.solo.personalityquiz;
-
 /*
  * Project: Personality Quiz (Java Swing) — Introvert vs Extrovert
  * Author: Marla Rush
- * Date: 12-06-2025
- * Description: Program entry point. Will initialize and launch the GUI.
+ * Date: 2025-12-16
+ * Description: Entry point that launches the Swing GUI.
  */
+
+package edu.solo.personalityquiz;
+
+import java.awt.EventQueue;
 
 public class App {
 
-    // Launches the application.
+    // Launches the Personality Quiz application.
     public static void main(String[] args) {
-        // Placeholder: GUI wiring will be added later.
-        System.out.println("Personality Quiz app starting...");
+        EventQueue.invokeLater(() -> {
+            Quiz quiz = new Quiz(Quiz.defaultBank());
+            QuizFrame frame = new QuizFrame(quiz);
+            frame.setVisible(true);
+        });
     }
 }
